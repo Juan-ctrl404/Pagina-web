@@ -1,0 +1,261 @@
+/* Estilos generales */
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+    font-weight: bold;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Carousel */
+.carousel-item {
+    transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-caption {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    border-radius: 0;
+    padding: 40px 20px 20px;
+}
+
+.carousel-caption h3 {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Cards con efecto hover */
+.card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card-title {
+    transition: color 0.3s ease;
+}
+
+.card:hover .card-title {
+    color: #4caf50 !important;
+}
+
+/* Secciones */
+section {
+    transition: background-color 0.3s ease;
+}
+
+h2 {
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #4caf50, transparent);
+    transition: width 0.4s ease;
+}
+
+section:hover h2::before {
+    width: 100px;
+}
+
+h3 {
+    transition: color 0.3s ease;
+}
+
+h3:hover {
+    color: #4caf50 !important;
+}
+
+/* Formulario */
+.form-control {
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+}
+
+.form-label {
+    color: #2d5016;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.form-label:hover {
+    color: #4caf50;
+}
+
+/* Botones */
+.btn-success {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    transition: background-color 0.3s ease;
+}
+
+footer p {
+    transition: transform 0.3s ease;
+}
+
+footer p:hover {
+    transform: scale(1.02);
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Efectos en iconos */
+img {
+    transition: filter 0.3s ease;
+}
+
+img:hover {
+    filter: brightness(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption {
+        padding: 20px 10px 10px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Efecto de carga suave */
+body {
+    animation: bodyFade 0.5s ease-out;
+}
+
+@keyframes bodyFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -15,16 +15,22 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-dark bg-success">
+<nav class="navbar navbar-dark bg-success shadow-sm">
     <div class="container">
-        <span class="navbar-brand">Huerto Feliz 🌿</span>
+        <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 1.5rem;">🌿 Huerto Feliz</a>
+        <ul class="nav ms-auto">
+            <li class="nav-item"><a class="nav-link text-white" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#historia">Historia</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#empresa">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+        </ul>
     </div>
 </nav>
 
 <!-- CARRUSEL SERVICIOS -->
-<section id="servicios" class="py-5">
+<section id="servicios" class="py-5" style="background: linear-gradient(135deg, #f5f5f5 0%, #e8f5e9 100%);">
     <div class="container">
-        <h2 class="text-center mb-4">Nuestros Servicios</h2>
+        <h2 class="text-center mb-4" style="color: #2d5016; font-weight: bold;">🌱 Nuestros Servicios</h2>
         <div id="carouselServicios" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active text-center">
@@ -49,13 +55,11 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios" data-bs-slide="prev" style="background-color: rgba(0,0,0,0.3); border-radius: 50%; width: 50px; height: 50px; left: auto;">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios" data-bs-slide="next" style="background-color: rgba(0,0,0,0.3); border-radius: 50%; width: 50px; height: 50px; right: auto;">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
@@ -64,32 +68,32 @@
 <!-- HISTORIA DE LA EMPRESA -->
 <section id="historia" class="py-5 bg-light">
     <div class="container">
-        <h2 class="text-center mb-4">Nuestra Historia</h2>
+        <h2 class="text-center mb-4" style="color: #2d5016; font-weight: bold;">📜 Nuestra Historia</h2>
         <p class="text-center mb-5">Huerto Feliz lleva 10 años en el mercado, brindando servicios de jardinería de calidad con pasión y dedicación.</p>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="card h-100">
+                <div class="card h-100 shadow-sm" style="border: none; border-top: 4px solid #4caf50; transition: transform 0.3s;">
                     <img src="imagenes/historia1.jpg" class="card-img-top" alt="Historia 1">
                     <div class="card-body">
-                        <h5 class="card-title">Testimonio de María González</h5>
+                        <h5 class="card-title" style="color: #2d5016;">⭐ María González</h5>
                         <p class="card-text">"Excelente servicio, mi jardín nunca había lucido tan bien. Recomiendo Huerto Feliz a todos."</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card h-100">
+                <div class="card h-100 shadow-sm" style="border: none; border-top: 4px solid #4caf50; transition: transform 0.3s;">
                     <img src="imagenes/historia2.jpg" class="card-img-top" alt="Historia 2">
                     <div class="card-body">
-                        <h5 class="card-title">Testimonio de Juan Pérez</h5>
-                        <p class="card-text">"Profesionales y puntuales. Han cuidado mi huerto por años y siempre quedan satisfecho."</p>
+                        <h5 class="card-title" style="color: #2d5016;">⭐ Juan Pérez</h5>
+                        <p class="card-text">"Profesionales y puntuales. Han cuidado mi huerto por años y siempre quedo satisfecho."</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card h-100">
+                <div class="card h-100 shadow-sm" style="border: none; border-top: 4px solid #4caf50; transition: transform 0.3s;">
                     <img src="imagenes/historia3.jpg" class="card-img-top" alt="Historia 3">
                     <div class="card-body">
-                        <h5 class="card-title">Testimonio de Ana López</h5>
+                        <h5 class="card-title" style="color: #2d5016;">⭐ Ana López</h5>
                         <p class="card-text">"Servicio de poda impecable. Mi jardín se ve renovado gracias a Huerto Feliz."</p>
                     </div>
                 </div>
@@ -99,26 +103,30 @@
 </section>
 
 <!-- INFORMACIÓN DE LA EMPRESA -->
-<section id="empresa" class="py-5">
+<section id="empresa" class="py-5" style="background: linear-gradient(135deg, #ffffff 0%, #f1f8f5 100%);">
     <div class="container">
-        <h2 class="text-center mb-4">Sobre Nosotros</h2>
+        <h2 class="text-center mb-4" style="color: #2d5016; font-weight: bold;">ℹ️ Sobre Nosotros</h2>
         <div class="row">
             <div class="col-md-6 mb-4">
-                <h3>Misión</h3>
-                <p>Proporcionar servicios de jardinería de alta calidad que embellezcan y mantengan los espacios verdes de nuestros clientes, contribuyendo a un entorno más saludable y sostenible.</p>
-                <h3>Valores</h3>
-                <p>Compromiso, calidad, sostenibilidad y atención personalizada.</p>
+                <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="color: #2d5016;">🎯 Misión</h3>
+                    <p>Proporcionar servicios de jardinería de alta calidad que embellezcan y mantengan los espacios verdes de nuestros clientes, contribuyendo a un entorno más saludable y sostenible.</p>
+                    <h3 style="color: #2d5016;">💚 Valores</h3>
+                    <p>Compromiso, calidad, sostenibilidad y atención personalizada.</p>
+                </div>
             </div>
             <div class="col-md-6 mb-4">
                 <img src="imagenes/mision1.jpg" class="img-fluid mb-3" alt="Misión 1">
                 <img src="imagenes/mision2.jpg" class="img-fluid" alt="Misión 2">
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <h3>Ubicación</h3>
-                <p>Dirección: Calle Ficticia 123, Ciudad Ejemplo.</p>
-                <p>Teléfono: +56 9 1234 5678</p>
+        <div clasdiv style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="color: #2d5016;">📍 Ubicación</h3>
+                    <p><strong>Dirección:</strong> Calle Ficticia 123, Ciudad Ejemplo.</p>
+                    <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+                    <p><strong>Email:</strong> contacto@huertofeliz.cl</p>
+                    <p><strong>Cómo llegar:</strong> Estamos ubicados en el centro de la ciudad, cerca del parque principal.</p>
+                </div
                 <p>Email: contacto@huertofeliz.cl</p>
                 <p>Cómo llegar: Estamos ubicados en el centro de la ciudad, cerca del parque principal.</p>
             </div>
@@ -128,7 +136,7 @@
         </div>
     </div>
 </section>
-
+ style="color: #2d5016; font-weight: bold;">📧 
 <!-- FORMULARIO DE CONTACTO -->
 <section id="contacto" class="py-5 bg-light">
     <div class="container">
@@ -149,18 +157,18 @@
             <div class="col-12">
                 <label for="mensaje" class="form-label">Mensaje *</label>
                 <textarea class="form-control" id="mensaje" rows="4" required></textarea>
-            </div>
+            </div> style="font-weight: bold; padding: 10px 30px; font-size: 1rem;">✅ 
             <div class="col-12">
                 <button type="submit" class="btn btn-success">Enviar Consulta</button>
             </div>
         </form>
     </div>
 </section>
-
-<!-- FOOTER -->
-<footer class="bg-success text-white py-4">
+5" style="border-top: 4px solid #2d5016;">
     <div class="container text-center">
-        <p>Teléfono: +56 9 1234 5678</p>
+        <p style="margin: 10px 0;"><strong>📞 Teléfono:</strong> +56 9 1234 5678</p>
+        <p style="margin: 10px 0;"><strong>📱 Redes Sociales:</strong> Facebook | Instagram | Twitter</p>
+        <p style="margin: 10px 0; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 10px; margin-top: 15px;">💚 Teléfono: +56 9 1234 5678</p>
         <p>Redes Sociales: Facebook | Instagram | Twitter</p>
         <p>Desarrollado por: Juan Muñoz</p>
     </div>
