@@ -15,52 +15,97 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-dark bg-success shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
     <div class="container">
-        <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 1.5rem;">🌿 Huerto Feliz</a>
-        <ul class="nav ms-auto">
-            <li class="nav-item"><a class="nav-link text-white" href="#servicios">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#historia">Historia</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#empresa">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
-        </ul>
+        <a class="navbar-brand fw-bold fs-3" href="#hero">🌿 Huerto Feliz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#empresa">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
 
-<!-- CARRUSEL SERVICIOS -->
-<section id="servicios" class="py-5" style="background: linear-gradient(135deg, #f5f5f5 0%, #e8f5e9 100%);">
+<!-- HERO SECTION -->
+<section id="hero" class="hero-section py-5" style="background: linear-gradient(135deg, #4caf50 0%, #66bb6a 50%, #81c784 100%); color: white; position: relative; overflow: hidden;">
     <div class="container">
-        <h2 class="text-center mb-4" style="color: #2d5016; font-weight: bold;">🌱 Nuestros Servicios</h2>
-        <div id="carouselServicios" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active text-center">
-                    <img src="imagenes/pasto.jpg" class="d-block w-100" alt="Corte de Pasto">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Corte de Pasto</h3>
-                        <p>Servicio profesional de corte de pasto para mantener tu jardín impecable. Desde $10.000 (puede variar).</p>
-                    </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">🌿 Huerto Feliz</h1>
+                <p class="lead mb-4" style="font-size: 1.2rem; line-height: 1.6;">
+                    Transformamos tu jardín en un oasis de belleza y tranquilidad. Con más de 10 años de experiencia,
+                    ofrecemos servicios profesionales de jardinería que hacen florecer tus espacios verdes.
+                </p>
+                <p class="mb-4">
+                    Desde el corte perfecto del césped hasta el diseño completo de jardines, nuestro equipo de expertos
+                    se dedica a crear y mantener espacios verdes que reflejen tu estilo de vida.
+                </p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="imagenes/hero-garden.jpg" alt="Jardín hermoso" class="img-fluid rounded shadow-lg" style="max-height: 400px; object-fit: cover;" onerror="this.src='https://via.placeholder.com/600x400/4caf50/white?text=Jard%C3%ADn+Feliz'">
+                <div class="mt-3">
+                    <span class="badge bg-white text-success px-3 py-2 fs-6">🌟 Más de 1000 clientes satisfechos</span>
                 </div>
-                <div class="carousel-item text-center">
-                    <img src="imagenes/poda.jpg" class="d-block w-100" alt="Poda de Árboles">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Poda de Árboles</h3>
-                        <p>Poda segura y eficiente para el cuidado de tus árboles. Desde $20.000 (puede variar).</p>
-                    </div>
-                </div>
-                <div class="carousel-item text-center">
-                    <img src="imagenes/jardineria.jpg" class="d-block w-100" alt="Jardinería General">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Jardinería General</h3>
-                        <p>Mantenimiento completo de jardines, incluyendo siembra y cuidado de plantas. Desde $15.000 (puede variar).</p>
+            </div>
+        </div>
+    </div>
+    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 100px; background: linear-gradient(to top, white, transparent);"></div>
+</section>
+
+<!-- CARRUSEL SERVICIOS -->
+<section id="servicios" class="py-4" style="background: linear-gradient(135deg, #f5f5f5 0%, #e8f5e9 100%);">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 style="color: #2d5016; font-weight: bold;">🌱 Nuestros Servicios</h2>
+            <p class="text-muted">Descubre nuestros servicios especializados</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <img src="imagenes/pasto.jpg" class="card-img-top" alt="Corte de Pasto" style="height: 180px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="color: #2d5016;">✂️ Corte de Pasto</h5>
+                        <p class="card-text small">Servicio profesional para mantener tu jardín impecable.</p>
+                        <span class="badge bg-success">Desde $10.000</span>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios" data-bs-slide="prev" style="background-color: rgba(0,0,0,0.3); border-radius: 50%; width: 50px; height: 50px; left: auto;">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios" data-bs-slide="next" style="background-color: rgba(0,0,0,0.3); border-radius: 50%; width: 50px; height: 50px; right: auto;">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <img src="imagenes/poda.jpg" class="card-img-top" alt="Poda de Árboles" style="height: 180px; object-fit: cover;" onerror="this.src='https://via.placeholder.com/300x180/4caf50/white?text=Poda+de+%C3%81rboles'">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="color: #2d5016;">🌳 Poda de Árboles</h5>
+                        <p class="card-text small">Poda segura y eficiente para el cuidado de tus árboles.</p>
+                        <span class="badge bg-success">Desde $20.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <img src="imagenes/jardineria.jpg" class="card-img-top" alt="Jardinería General" style="height: 180px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="color: #2d5016;">🌺 Jardinería General</h5>
+                        <p class="card-text small">Mantenimiento completo incluyendo siembra y cuidado.</p>
+                        <span class="badge bg-success">Desde $15.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <img src="imagenes/diseño.jpg" class="card-img-top" alt="Diseño de Jardines" style="height: 180px; object-fit: cover;" onerror="this.src='https://via.placeholder.com/300x180/4caf50/white?text=Dise%C3%B1o+de+Jardines'">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="color: #2d5016;">🎨 Diseño de Jardines</h5>
+                        <p class="card-text small">Creación de espacios verdes únicos y funcionales.</p>
+                        <span class="badge bg-success">Desde $50.000</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -116,19 +161,18 @@
                 </div>
             </div>
             <div class="col-md-6 mb-4">
-                <img src="imagenes/mision1.jpg" class="img-fluid mb-3" alt="Misión 1">
-                <img src="imagenes/mision2.jpg" class="img-fluid" alt="Misión 2">
+                <img src="imagenes/mision1.jpg" class="img-fluid mb-3" alt="Misión 1" style="height: 200px; object-fit: cover; width: 100%;">
+                <img src="imagenes/mision2.jpg" class="img-fluid" alt="Misión 2" style="height: 200px; object-fit: cover; width: 100%;">
             </div>
         </div>
-        <div clasdiv style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                    <h3 style="color: #2d5016;">📍 Ubicación</h3>
+        <div class="col-md-6">
+            <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #2d5016;">📍 Ubicación</h3>
                     <p><strong>Dirección:</strong> Calle Ficticia 123, Ciudad Ejemplo.</p>
                     <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
                     <p><strong>Email:</strong> contacto@huertofeliz.cl</p>
                     <p><strong>Cómo llegar:</strong> Estamos ubicados en el centro de la ciudad, cerca del parque principal.</p>
-                </div
-                <p>Email: contacto@huertofeliz.cl</p>
-                <p>Cómo llegar: Estamos ubicados en el centro de la ciudad, cerca del parque principal.</p>
+                </div>
             </div>
             <div class="col-md-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.41941548468182!3d37.77492977975919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c3b1c3b3b%3A0x4a6f9e8b8b8b8b8b!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -136,7 +180,7 @@
         </div>
     </div>
 </section>
- style="color: #2d5016; font-weight: bold;">📧 
+
 <!-- FORMULARIO DE CONTACTO -->
 <section id="contacto" class="py-5 bg-light">
     <div class="container">
@@ -155,22 +199,18 @@
                 <input type="tel" class="form-control" id="telefono" required>
             </div>
             <div class="col-12">
-                <label for="mensaje" class="form-label">Mensaje *</label>
-                <textarea class="form-control" id="mensaje" rows="4" required></textarea>
-            </div> style="font-weight: bold; padding: 10px 30px; font-size: 1rem;">✅ 
-            <div class="col-12">
-                <button type="submit" class="btn btn-success">Enviar Consulta</button>
+                <button type="submit" class="btn btn-success" style="font-weight: bold; padding: 10px 30px; font-size: 1rem;">✅ Enviar Consulta</button>
             </div>
         </form>
     </div>
 </section>
-5" style="border-top: 4px solid #2d5016;">
+
+<!-- FOOTER -->
+<footer class="bg-success text-white py-5" style="border-top: 4px solid #2d5016;">
     <div class="container text-center">
         <p style="margin: 10px 0;"><strong>📞 Teléfono:</strong> +56 9 1234 5678</p>
         <p style="margin: 10px 0;"><strong>📱 Redes Sociales:</strong> Facebook | Instagram | Twitter</p>
-        <p style="margin: 10px 0; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 10px; margin-top: 15px;">💚 Teléfono: +56 9 1234 5678</p>
-        <p>Redes Sociales: Facebook | Instagram | Twitter</p>
-        <p>Desarrollado por: Juan Muñoz</p>
+        <p style="margin: 10px 0; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 10px; margin-top: 15px;">💚 Desarrollado por: Juan Muñoz</p>
     </div>
 </footer>
 
@@ -195,106 +235,23 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     alert('Formulario enviado correctamente. Nos pondremos en contacto pronto.');
     this.reset();
 });
-</script>
 
-</body>
-</html>
-
-    </div>
-</div>
-
-<!-- HISTORIA + TESTIMONIOS -->
-<div class="container mt-5">
-    <h2 class="text-center">Nuestra Historia</h2>
-    <p class="text-center">10 años entregando servicios de calidad en jardinería.</p>
-
-    <div class="row">
-
-        <div class="col-md-4">
-            <div class="card">
-                <img src="imagenes/historia1.jpg" class="card-img-top">
-                <div class="card-body">
-                    <p>"Excelente servicio" - Juan Pérez</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card">
-                <img src="imagenes/historia2.jpg" class="card-img-top">
-                <div class="card-body">
-                    <p>"Muy responsables" - María López</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card">
-                <img src="imagenes/historia1.jpg" class="card-img-top">
-                <div class="card-body">
-                    <p>"Recomendados 100%" - Carlos Díaz</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- MISION Y DATOS -->
-<div class="container mt-5">
-    <h2 class="text-center">Sobre Nosotros</h2>
-
-    <p><strong>Misión:</strong> Entregar servicios de jardinería de calidad.</p>
-    <p><strong>Valores:</strong> Responsabilidad, compromiso y respeto.</p>
-
-    <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
-    <p><strong>Email:</strong> contacto@huertofeliz.cl</p>
-
-    <!-- MAPA -->
-    <iframe src="https://www.google.com/maps?q=Santiago&output=embed" width="100%" height="300"></iframe>
-</div>
-
-<!-- FORMULARIO -->
-<div class="container mt-5">
-    <h2 class="text-center">Contacto</h2>
-
-    <form id="formulario">
-        <input type="text" id="nombre" class="form-control mb-2" placeholder="Nombre">
-        <input type="email" id="correo" class="form-control mb-2" placeholder="Correo">
-        <input type="text" id="telefono" class="form-control mb-2" placeholder="Teléfono">
-        <textarea id="mensaje" class="form-control mb-2" placeholder="Escribe tu consulta"></textarea>
-
-        <button type="submit" class="btn btn-success">Enviar</button>
-    </form>
-
-    <p id="error" class="text-danger mt-2"></p>
-</div>
-
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center mt-5 p-3">
-    <p>Teléfono: +56 9 1234 5678</p>
-    <p>Instagram: @huertofeliz</p>
-    <p>Desarrollado por: TU NOMBRE</p>
-</footer>
-
-<script>
-document.getElementById("formulario").addEventListener("submit", function(e){
-    e.preventDefault();
-
-    let nombre = document.getElementById("nombre").value;
-    let correo = document.getElementById("correo").value;
-    let telefono = document.getElementById("telefono").value;
-    let mensaje = document.getElementById("mensaje").value;
-
-    if(nombre == "" || correo == "" || telefono == "" || mensaje == ""){
-        document.getElementById("error").innerText = "Todos los campos son obligatorios";
-    } else {
-        document.getElementById("error").innerText = "Formulario enviado correctamente";
-    }
+// Función para scroll suave en el navbar
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+        if (target) {
+            const offsetTop = target.offsetTop - 80; // Ajuste para el navbar
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
 });
 </script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
